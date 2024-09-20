@@ -10,12 +10,11 @@ const Home = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const token = localStorage.getItem('token');
 
       try {
         const response = await fetch('https://api-infnet-produtos-privado.vercel.app/produtos', {
           headers: {
-            Authorization: `Bearer ${token}`,
+            Authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVzSW4iOiIzNjVkIiwiaWF0IjoxNzI2ODY0NTQ4fQ.oQ6vlVpQEHwsq82736fY9I_OlXXBDyWYQoatf3rr6uk",
           },
         });
         
